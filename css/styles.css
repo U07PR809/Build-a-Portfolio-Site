@@ -1,0 +1,294 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(64, 64, 64);
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero-image-container {
+	width: 1150px;
+	background-image: url("../imgs/banner.png");
+	background-color: #00bff3;
+	height: 40vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.profile-wrapper {
+	width: 33%;
+	height: 40vh;
+	padding: 0 0.5vw;
+	padding-top: 3vh;
+	margin-left: 0.8vw;
+	line-height: 1.5rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	width: 100px;
+}
+
+.greetings {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1%;
+}
+
+.greetings h1 {
+	font-size: 55px;
+	font-weight: bold;
+	padding: 10px 0;
+	margin-left: 0.7vw;
+}
+
+.my-info {
+	font-size: 20px;
+	color: #33f;
+	padding: 3px 0;
+	line-height: 30px;
+}
+
+.projects-header {
+	width: 1150px;
+	font-size: 28px;
+	padding: 1vh 0;
+}
+
+.projects-list {
+	width: 1150px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card-container {
+	width: 33%;
+	padding: 0.5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(251, 251, 251, 0.8);
+}
+
+.card-container:nth-child(2) {
+	margin: 0 0.3vw;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.card-title {
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding: 0.4vh 0;
+	background-color: #66cd00;
+}
+
+.card-description {
+	margin: 0.5vh 0;
+	font-size: 18px;
+	line-height: 1.5rem;
+	padding: 0.8vw 0.8vw;
+	background-color: #f00;
+}
+.card-links {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid rgba(251, 251, 251, 0.9);
+	border-bottom: 2px solid rgba(251, 251, 251, 0.9);
+	background-color: #66cd00;
+}
+
+.card-link {
+	height: 45px;
+	width: 33.3%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: color 0.2s;
+	font-size: 22px;
+	border-right: 2px solid rgba(251, 251, 251, 0.9);
+	color: #fff;
+}
+.card-link:hover {
+	color: #33f;
+}
+
+.card-link:first-child {
+	border-left: 2px solid rgba(251, 251, 251, 0.9);
+}
+
+.card-link-text {
+	font-weight: bold;
+	padding: 0.4vw 0;
+	text-align: center;
+	margin-left: 0.7vw;
+}
+
+footer {
+	width: 1150px;
+	margin-top: 0.8vh;
+	background-color: #0198e1;
+}
+
+.colophon {
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px 0;
+	line-height: 1.75rem;
+}
+
+.social-links {
+	font-size: 140%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 1vh;
+	padding-bottom: 2.5vh;
+}
+
+.fab {
+	color: #fff;
+	margin: 0 0.3vh;
+	transition: transform 0.2s ease;
+}
+
+.fab:hover {
+	transform: translateY(-10px);
+}
+
+@media screen and (max-width: 1200px) {
+	.hero-image-container {
+		width: 100%;
+	}
+
+	.projects-header {
+		width: 100%;
+	}
+
+	.projects-list {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.profile-wrapper {
+		width: 33%;
+	}
+
+	.greetings h1 {
+		font-size: 6vw;
+	}
+
+	.my-info {
+		font-size: 2.25vw;
+	}
+
+	.projects-header {
+		padding-left: 4vw;
+	}
+	.projects-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card-container {
+		width: 45%;
+		margin: 1vh 0vh;
+	}
+
+	.card-container:nth-child(2) {
+		margin: 1vh 1vh;
+	}
+
+	.card-title {
+		font-size: 2.65vw;
+	}
+
+	.card-description {
+		font-size: 2.25vw;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.profile-wrapper {
+		margin-left: 0;
+	}
+
+	.my-info {
+		line-height: 5vw;
+	}
+
+	.projects-header {
+		font-size: 4.5vw;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.projects-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-container {
+		width: 50%;
+	}
+
+	.card-title {
+		font-size: 2.5vw;
+	}
+
+	.card-description {
+		font-size: 2.75vw;
+	}
+	.card-link {
+		font-size: 3.5vw;
+		height: 7vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.profile-wrapper {
+		padding-top: 10vh;
+	}
+
+	.my-info {
+		display: none;
+	}
+	.card-title {
+		font-size: 12px;
+	}
+	.card-description {
+		font-size: 14px;
+	}
+}
